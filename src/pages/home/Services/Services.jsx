@@ -49,7 +49,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="bg-[#03373D] p-16 rounded-3xl">
+    <section className="bg-[#03373D] p-8 lg:p-16 rounded-3xl">
       <div className="px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
           Our Services
