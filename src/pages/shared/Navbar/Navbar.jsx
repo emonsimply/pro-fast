@@ -60,7 +60,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <Link to="/login" className="btn font-bold text-gray-600 border-gray-300 rounded-xl ">Sign In</Link>
-        <button className="btn font-bold bg-[#CAEB66] text-gray-600 border-0 rounded-xl ml-2 ">Sign Up</button>
+        <Link to="/register" className="btn font-bold bg-[#CAEB66] text-gray-600 border-0 rounded-xl ml-2 ">Sign Up</Link>
       </div>
     </div>
   );
