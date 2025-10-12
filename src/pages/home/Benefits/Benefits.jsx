@@ -32,7 +32,7 @@ const Benefits = () => {
         {benefits.map((item) => (
           <div
             key={item.id}
-            className="flex flex-col md:flex-row items-center gap-10 p-6 rounded-2xl shadow-sm bg-gray-100"
+            className="flex flex-col md:flex-row items-center gap-10 p-6 rounded-2xl shadow-sm bg-white"
           >
             {/* Icon / Illustration */}
             <div className="w-40 h-40 flex items-center justify-center">

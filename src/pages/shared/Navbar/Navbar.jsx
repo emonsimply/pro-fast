@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import ProFastLogo from "../ProFastLogo/ProFastLogo";
+import "./Navbar.css"
 
 const Navbar = () => {
   const navItems = (
@@ -23,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-gray-100 shadow-sm rounded-2xl my-4">
+    <div className="navbar bg-white shadow-sm rounded-2xl my-4">
       <div className="navbar-start ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -58,7 +59,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-gray-600">{navItems}</ul>
       </div>
       <div className="navbar-end">
-        <button className="btn font-bold text-gray-600 border-gray-300 rounded-xl ">Sign In</button>
+        <Link to="/login" className="btn font-bold text-gray-600 border-gray-300 rounded-xl ">Sign In</Link>
         <button className="btn font-bold bg-[#CAEB66] text-gray-600 border-0 rounded-xl ml-2 ">Sign Up</button>
       </div>
     </div>

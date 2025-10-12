@@ -41,7 +41,7 @@ const HowItWorks = () => {
           {steps.map(step => (
             <div
               key={step.id}
-              className="bg-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition"
+              className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition"
             >
               <div className="mb-4">{step.icon}</div>
               <h3 className="font-semibold text-lg text-gray-800 mb-2">{step.title}</h3>
