@@ -2,24 +2,25 @@ import React from "react";
 import { Link, NavLink } from "react-router";
 import ProFastLogo from "../ProFastLogo/ProFastLogo";
 import "./Navbar.css"
+import { FaArrowRight } from "react-icons/fa";
 
 const Navbar = () => {
   const navItems = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="services">Services</NavLink>
       </li>
       <li>
-        <NavLink to="#">Services</NavLink>
+        <NavLink to="coverage">Coverage</NavLink>
       </li>
       <li>
-        <NavLink to="#">About Us</NavLink>
+        <NavLink to="aboutUs">About Us</NavLink>
       </li>
       <li>
-        <NavLink to="#">Pricing</NavLink>
+        <NavLink to="pricing">Pricing</NavLink>
       </li>
       <li>
-        <NavLink to="#">Be a Rider</NavLink>
+        <NavLink to="Be a Rider">Be a Rider</NavLink>
       </li>
     </>
   );
@@ -60,7 +61,10 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <Link to="/login" className="btn font-bold text-gray-600 border-gray-300 rounded-xl ">Sign In</Link>
-        <Link to="/register" className="btn font-bold bg-[#CAEB66] text-gray-600 border-0 rounded-xl ml-2 ">Sign Up</Link>
+        <Link to="/register" className="btn font-bold bg-primary text-gray-600 border-0 rounded-xl ml-2 ">Sign Up
+</Link>
+<span className="bg-secondary rounded-full p-3"><FaArrowRight className="text-primary -rotate-45" /></span>
+
       </div>
     </div>
   );

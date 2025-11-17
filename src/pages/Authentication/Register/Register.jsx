@@ -16,7 +16,7 @@ const Register = () => {
           <label className="label">Password</label>
           <input type="password" className="input" placeholder="Password" />
           
-          <button className="btn bg-[#CAEB66] mt-4">Register</button>
+          <button className="btn bg-primary mt-4">Register</button>
         </fieldset>
         <p className="text-gray-500 my-1">
           Already have an account? {" "}

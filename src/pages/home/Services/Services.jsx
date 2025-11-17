@@ -64,7 +64,7 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow hover:bg-[#CAEB66]"
+              className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow hover:bg-primary"
             >
               {service.icon}
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
