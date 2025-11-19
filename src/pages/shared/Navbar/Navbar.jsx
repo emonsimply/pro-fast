@@ -1,10 +1,17 @@
 import React from "react";
 import { Link, NavLink } from "react-router";
 import ProFastLogo from "../ProFastLogo/ProFastLogo";
-import "./Navbar.css"
+import "./Navbar.css";
 import { FaArrowRight } from "react-icons/fa";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logOutUser } = useAuth();
+
+
+  const handleLogOut = ()=>{
+    logOutUser()
+  }
   const navItems = (
     <>
       <li>
@@ -59,13 +66,43 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-gray-600">{navItems}</ul>
       </div>
-      <div className="navbar-end">
-        <Link to="/login" className="btn font-bold text-gray-600 border-gray-300 rounded-xl ">Sign In</Link>
-        <Link to="/register" className="btn font-bold bg-primary text-gray-600 border-0 rounded-xl ml-2 ">Sign Up
-</Link>
-<span className="bg-secondary rounded-full p-3"><FaArrowRight className="text-primary -rotate-45" /></span>
-
-      </div>
+      {user ? (
+        <div className="navbar-end">
+          <Link
+            onClick={handleLogOut}
+            className="btn font-bold text-gray-600 border-gray-300 rounded-xl "
+          >
+            LogOut
+          </Link>
+          <Link
+            to="/beARider"
+            className="btn font-bold bg-primary text-gray-600 border-0 rounded-xl ml-2 "
+          >
+            Be a rider
+          </Link>
+          <span className="bg-secondary rounded-full p-3">
+            <FaArrowRight className="text-primary -rotate-45" />
+          </span>
+        </div>
+      ) : (
+        <div className="navbar-end">
+          <Link
+            to="/login"
+            className="btn font-bold text-gray-600 border-gray-300 rounded-xl "
+          >
+            Sign In
+          </Link>
+          <Link
+            to="/register"
+            className="btn font-bold bg-primary text-gray-600 border-0 rounded-xl ml-2 "
+          >
+            Sign Up
+          </Link>
+          <span className="bg-secondary rounded-full p-3">
+            <FaArrowRight className="text-primary -rotate-45" />
+          </span>
+        </div>
+      )}
     </div>
   );
 };

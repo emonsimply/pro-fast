@@ -1,16 +1,57 @@
-# React + Vite
+# 📦 ProFast – Delivery Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ProFast is a modern and efficient **parcel delivery service platform** where companies or individuals can easily send parcels from one location to another.  
+Delivery Riders can also **apply online** through a dedicated form to join the service.
 
-Currently, two official plugins are available:
+🔗 **Live Website:** https://profast-emosimply.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🌐 User Features
+- Send parcels securely from one location to another
+- Modern and responsive user interface
+- Real-time interactive location map using **Leaflet & React Leaflet**
+- Smooth & attractive UI with TailwindCSS and DaisyUI
+- Sliders, animations, and ticker text using Swiper & React Fast Marquee
 
-## Expanding the ESLint configuration
+### 👨‍💼 Merchant / Admin Features
+- Manage all parcel orders
+- Track parcel status
+- Handle customer reviews & feedback
+- Manage delivery services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛵 Delivery Rider Features
+- Apply to become a delivery rider using the online form
+- Manage assigned parcels (backend support)
+- Firebase Authentication for User & Rider login
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+- React (Vite)
+- React Router
+- TailwindCSS
+- DaisyUI
+- Firebase Authentication
+- React Hook Form
+- Leaflet & React Leaflet
+- Swiper Slider
+
+### **Backend**
+- Node.js  
+- Express.js  
+- MongoDB (MongoDB Atlas)  
+- JWT Authentication  
+- Mongoose  
+
+### **Tools & Dependencies**
+- ESLint  
+- Netlify Deployment  
+- Git & GitHub version control  
+
+---
+
